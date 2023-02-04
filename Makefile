@@ -1,11 +1,11 @@
 .PHONY: clean
-IDIR=../include
+IDIR=./include
 CXX=g++
 CXXFLAGS=-I$(IDIR) -std=c++11 #-L$(LDIR)
 
-ODIR=./obj
+ODIR=./src/obj
 LDIR=/usr/local/Cellar/sfml/2.5.1_1/lib
-TDIR=../bin/main
+TDIR=./bin/main
 
 LIBS=-lsfml-graphics -lsfml-window -lsfml-system
 
@@ -27,7 +27,7 @@ main: $(OBJ)
 
 run:
 	@echo "Running program..."
-	@../bin/./main
+	@./bin/./main
 
 clean:
 	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
