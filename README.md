@@ -48,13 +48,7 @@ LDIR=/usr/local/Cellar/sfml/2.5.1_2
 
 ## Running the project
 
-Navigate to the `src` directory of the project files
-
-```
-cd src
-```
-
-Then execute the following command:
+Make sure you are in the top level directory of the project, then execute the following command:
 
 ```
 make
@@ -62,4 +56,4 @@ make
 
 This will not only start the application but will also make an executable file in the bin directory and subsequent runs can be started by opening that file.
 
-If the code is modified, you will need to run the command again to recompile the project.
+If the code is modified, you will need to run the make command again to recompile the project.
