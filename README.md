@@ -60,4 +60,6 @@ Then execute the following command:
 make
 ```
 
-This will make an executable file in the same directory and subsequent runs can be started by opening that file.
+This will not only start the application but will also make an executable file in the bin directory and subsequent runs can be started by opening that file.
+
+If the code is modified, you will need to run the command again to recompile the project.

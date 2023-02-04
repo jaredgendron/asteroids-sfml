@@ -21,12 +21,12 @@ all: main run
 
 main: $(OBJ)
 	@echo "Compiling changed files..."
-	$(CXX) -o $@ $^ $(CXXFLAGS) $(LIBS)
+	$(CXX) -o ../bin/main $^ $(CXXFLAGS) $(LIBS)
 	@echo "Done."
 
 run:
 	@echo "Running program..."
-	@./main
+	@../bin/./main
 
 clean:
 	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
