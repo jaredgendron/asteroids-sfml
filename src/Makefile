@@ -5,6 +5,7 @@ CXXFLAGS=-I$(IDIR) -std=c++11 #-L$(LDIR)
 
 ODIR=./obj
 LDIR=/usr/local/Cellar/sfml/2.5.1_1/lib
+TDIR=../bin/main
 
 LIBS=-lsfml-graphics -lsfml-window -lsfml-system
 
@@ -21,7 +22,7 @@ all: main run
 
 main: $(OBJ)
 	@echo "Compiling changed files..."
-	$(CXX) -o ../bin/main $^ $(CXXFLAGS) $(LIBS)
+	$(CXX) -o $(TDIR) $^ $(CXXFLAGS) $(LIBS)
 	@echo "Done."
 
 run:
